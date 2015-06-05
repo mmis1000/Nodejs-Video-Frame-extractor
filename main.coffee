@@ -48,7 +48,7 @@ class Converter extends EventEmitter
         @frames.push newFrame
         @emit 'frame', newFrame
         
-        offset += @width * @height * 3 + offset
+        offset += @width * @height * 3
         
       if offset isnt 0
         @partial = @partial.slice offset
