@@ -36,7 +36,7 @@ count = -1
 
 dither = new Dither
 
-conv = new Converter (fs.createReadStream 'test.yuv'), width, height
+conv = new Converter (fs.createReadStream 'test.rgb'), width, height
 conv.on 'frame', (frame)->
   count++
   

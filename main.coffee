@@ -42,7 +42,8 @@ class Converter extends EventEmitter
       
       offset = 0
       while @partial.length - offset >= @width * @height * 3
-        newFrame = mapFrame @partial.slice 0 + offset, @width * @height * 3 + offset
+        #newFrame = mapFrame @partial.slice 0 + offset, @width * @height * 3 + offset
+        newFrame = @partial.slice 0 + offset, @width * @height * 3 + offset
         newFrame = new Image newFrame, @width, @height
         @frames.push newFrame
         @emit 'frame', newFrame

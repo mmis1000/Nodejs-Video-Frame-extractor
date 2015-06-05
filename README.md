@@ -39,9 +39,9 @@ usage:
 
 ------
 
-generate test.yuv `by ffmpeg` for test
+generate test.rgb `by ffmpeg` for test
 
-`cat [yourvideo] | ffmpeg -i -  -vcodec rawvideo -qp:v 0 -pix_fmt yuv444p -r "2" -vf scale=320:240 -f rawvideo pipe:1 > test.yuv`
+`cat [yourvideo] | ffmpeg -i -  -vcodec rawvideo -qp:v 0 -pix_fmt rgb24 -r "2" -vf scale=320:240 -f rawvideo pipe:1 > test.rgb`
 
 run test by `coffee test.coffee`
 
