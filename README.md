@@ -1,6 +1,6 @@
 ###Nodejs Video Frame extractor
 
-split yuv stream into frames
+split rgb24 stream into frames
 
 ------
 
@@ -16,7 +16,7 @@ usage:
         frame (Image)
           emit when every frame finished
     
-    # since raw yuv stream doesn't have header, 
+    # since raw rgb24 stream doesn't have header, 
     # it is impossiple to detect the real size of video automatically
       
     class Image
