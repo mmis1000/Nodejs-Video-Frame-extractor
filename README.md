@@ -1,5 +1,7 @@
 ###Nodejs Video Frame extractor
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mmis1000/Nodejs-Video-Frame-extractor.svg)](https://greenkeeper.io/)
+
 split rgb24 stream into frames
 
 ------
